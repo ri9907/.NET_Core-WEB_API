@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../Scripts/User.js"></script>
+    <meta charset="utf-8" />
+    <title>new user</title>
+    <link href="Style/Register.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="card">
+        <label>כתובת מייל</label>
+        <input id="emailRegister" type="email" /><br /><br />
+        <label>סיסמה</label>
+        <input type="password" id="password" oninput="checkPassword()" /><br /><br />
+        <div id="strength"></div>
+        <progress id="progress" value="0" max="4"></progress><br /><br />
+        <label>שם פרטי</label>
+        <input id="firstNameRegister" type="text" /><br /><br />
+        <label>שם משפחה</label>
+        <input id="lastNameRegister" type="text" /><br /><br />
+        <button onclick="Register()">הרשמה</button>
+    </div>
+</body>
+</html>

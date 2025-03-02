@@ -1,0 +1,476 @@
+﻿/*html, body {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background: #ffcccb;*/ /* צבע רקע אחיד בגווני פסטל */
+    /*color: #555;*/ /* צבע טקסט נעים יותר */
+    /*font-family: 'Roboto', sans-serif;*/ /* גופן כללי */
+/*}
+
+.bar {
+    background: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;*/ /* יישר את כל התוכן לימין */
+    /*align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/ /* אפקט צל */
+    /*border-bottom: 2px solid #ffb6c1;*/ /* קו תחתון ורוד */
+/*}
+
+.QuickLinks ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;*/ /* יישר את הלינקים לימין */
+    /*margin: 0;
+}
+
+.QuickLinks li {
+    margin: 0 15px;*/ /* מרווחים בין הלינקים */
+/*}
+
+.QuickLinks a {
+    color: #337ab7;*/ /* צבע קישור טקסט */
+    /*text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;*/ /* שינוי צבע רקע בהדרגתיות */
+/*}
+
+    .QuickLinks a:hover {
+        background-color: #ffb6c1;*/ /* שינוי רקע לורוד על ריחוף */
+        /*text-decoration: none;
+    }
+
+.BagSummary, .Checkout {
+    display: flex;
+    align-items: center;
+    gap: 10px;*/ /* רווח של 10px בין האלמנטים */
+/*}
+
+    .BagSummary .Icon {
+        position: relative;
+    }
+
+    .BagSummary .ItemCount {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background: #8DB600;*/ /* צבע ירוק תפוח */
+        /*border-radius: 50%;
+        padding: 5px;
+        color: white;
+    }
+
+.Checkout {
+    display: flex;
+    align-items: center;
+}
+
+    .Checkout .goToCart {
+        background: #8DB600;*/ /* צבע ירוק תפוח */
+        /*color: white;
+        padding: 7px 10px;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;*/ /* שינוי צבע רקע בהדרגתיות */
+        /*display: inline-flex;
+        align-items: center;
+        margin-left: 10px;*/ /* ריווח משמאל על מנת להפקיד מרווח מספיק */
+    /*}
+
+        .Checkout .goToCart:hover {
+            background: #76A700;*/ /* שינוי צבע על ריחוף */
+        /*}
+
+.Filters {
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/ /* אפקט צל */
+    /*border-radius: 8px;*/ /* פינות מעוגלות */
+/*}
+
+.ResultCount {
+    display: flex;
+    justify-content: space-between;*/ /* מרווחים בין הכיתובים */
+    /*align-items: center;
+    margin-bottom: 20px;
+    color: #8DB600;*/ /* שינוי צבע הכיתוב */
+/*}
+
+.filterBreak {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.priceInputText {
+    width: calc(50% - 52px);*/ /* להבטיח רוחב כלל מתאים */
+    /*padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #8DB600;*/ /* צבע רקע ירוק תפוח */
+    /*color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+    button:hover {
+        background-color: #76A700;*/ /* שינוי צבע על ריחוף */
+    /*}
+
+.card {
+    background: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+    flex: 1 0 21%;*/ /* קובעים שהכרטיסים יתאימו באופן דינמי */
+    /*max-width: 21%;*/ /* כדי להבטיח לא יותר מדי מקום לכרטיסים */
+/*}
+
+    .card .img-w {
+        width: 100%;
+        height: auto;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card h1 {
+        font-size: 18px;
+        color: #8DB600;*/ /* צבע ירוק תפוח לכותרת */
+        /*margin: 10px 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .card .price {
+        color: grey;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .card .description {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+    .pagination a {
+        color: #337ab7;*/ /* צבע קישור טקסט */
+        /*text-decoration: none;
+        font-size: 20px;
+        margin: 0 5px;
+    }
+
+        .pagination a:hover {
+            text-decoration: underline;*/ /* קו תחתי על ריחוף */
+        /*}*/
+
+/* עיצוב רספונסיבי */
+/*#ProductList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 1200px;
+}*/
+
+/* התאמות רספונסיביות לגודל מסכים שונים */
+/*@media (max-width: 1200px) {
+    .card {
+        max-width: 28%;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        max-width: 38%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        max-width: 98%;
+    }
+}*/
+
+/* הוספת גופן מודרני */
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+.QuickLinks, .BagSummary, .Checkout {
+    display: flex;
+    align-items: center;
+    gap: 10px;*/ /* רווח של 10px בין האלמנטים */
+/*}*/
+html, body {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background: #ffcccb; /* צבע רקע אחיד בגווני פסטל */
+    color: #555; /* צבע טקסט נעים יותר */
+    font-family: 'Roboto', sans-serif; /* גופן כללי */
+}
+
+.bar {
+    background: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end; /* יישר את כל התוכן לימין */
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* אפקט צל */
+    border-bottom: 2px solid #ffb6c1; /* קו תחתון ורוד */
+}
+
+.QuickLinks ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* יישר את הלינקים לימין */
+    margin: 0;
+}
+
+.QuickLinks li {
+    margin: 0 15px; /* מרווחים בין הלינקים */
+}
+
+.QuickLinks a {
+    color: #337ab7; /* צבע קישור טקסט */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* שינוי צבע רקע בהדרגתיות */
+}
+
+    .QuickLinks a:hover {
+        background-color: #ffb6c1; /* שינוי רקע לורוד על ריחוף */
+        text-decoration: none;
+    }
+
+.BagSummary, .Checkout {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* רווח של 10px בין האלמנטים */
+}
+
+    .BagSummary .Icon {
+        position: relative;
+    }
+
+    .BagSummary .ItemCount {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background: #8DB600; /* צבע ירוק תפוח */
+        border-radius: 50%;
+        padding: 5px;
+        color: white;
+    }
+
+.Checkout {
+    display: flex;
+    align-items: center;
+}
+
+    .Checkout .goToCart {
+        background: #8DB600; /* צבע ירוק תפוח */
+        color: white;
+        padding: 7px 10px;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s ease; /* שינוי צבע רקע בהדרגתיות */
+        display: inline-flex;
+        align-items: center;
+        margin-left: 10px; /* ריווח משמאל על מנת להפקיד מרווח מספיק */
+    }
+
+        .Checkout .goToCart:hover {
+            background: #76A700; /* שינוי צבע על ריחוף */
+        }
+
+.Filters {
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* אפקט צל */
+    border-radius: 8px; /* פינות מעוגלות */
+    max-width: 250px;
+    margin-right: 20px;
+}
+
+.ResultCount {
+    display: flex;
+    justify-content: space-between; /* מרווחים בין הכיתובים */
+    align-items: center;
+    margin-bottom: 20px;
+    color: #8DB600; /* שינוי צבע הכיתוב */
+}
+
+.filterBreak {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.priceInputText {
+    width: calc(50% - 52px); /* להבטיח רוחב כלל מתאים */
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #8DB600; /* צבע רקע ירוק תפוח */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+    button:hover {
+        background-color: #76A700; /* שינוי צבע על ריחוף */
+    }
+
+.card {
+    background: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+    flex: 1 0 21%; /* קובעים שהכרטיסים יתאימו באופן דינמי */
+    max-width: 21%; /* כדי להבטיח לא יותר מדי מקום לכרטיסים */
+}
+
+    .card .img-w {
+        width: 100%;
+        height: auto;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card h1 {
+        font-size: 18px;
+        color: #8DB600; /* צבע ירוק תפוח לכותרת */
+        margin: 10px 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .card .price {
+        color: grey;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .card .description {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+    .pagination a {
+        color: #337ab7; /* צבע קישור טקסט */
+        text-decoration: none;
+        font-size: 20px;
+        margin: 0 5px;
+    }
+
+        .pagination a:hover {
+            text-decoration: underline; /* קו תחתי על ריחוף */
+        }
+
+/* עיצוב רספונסיבי */
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+#ProductList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1;
+}
+
+/* התאמות רספונסיביות לגודל מסכים שונים */
+@media (max-width: 1200px) {
+    .card {
+        max-width: 28%;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        max-width: 38%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        max-width: 98%;
+    }
+}
+
+/* הוספת גופן מודרני */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+.QuickLinks, .BagSummary, .Checkout {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* רווח של 10px בין האלמנטים */
+}

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../Scripts/User.js"></script>
+    <meta charset="utf-8" />
+    <title>עיצוב דף עם CSS</title>
+    <link href="Style/UpdateUser.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="card">
+        <h1 id="result"></h1>
+        <label>כתובת מייל</label>
+        <input id="email" type="email" /><br /><br />
+        <label>סיסמה</label>
+        <input id="password" type="password" oninput="checkPassword()" /><br /><br />
+        <div id="strength"></div>
+        <progress id="progress" value="0" max="4"></progress><br /><br />
+        <label>שם פרטי</label>
+        <input id="firstName" type="text" /><br /><br />
+        <label>שם משפחה</label>
+        <input id="lastName" type="text" /><br /><br />
+        <button onclick="UpdatUser()">עדכון פרטי משתמש</button>
+    </div>
+
+    <script>
+        document.getElementById("result").innerHTML = JSON.parse(sessionStorage.getItem("user")).firstName + " שלום ";
+        document.getElementById("email").value = JSON.parse(sessionStorage.getItem("user")).email;
+        document.getElementById("password").value = JSON.parse(sessionStorage.getItem("user")).password;
+        document.getElementById("firstName").value = JSON.parse(sessionStorage.getItem("user")).firstName;
+        document.getElementById("lastName").value = JSON.parse(sessionStorage.getItem("user")).lastName;
+    </script>
+</body>
+</html>

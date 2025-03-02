@@ -1,0 +1,226 @@
+﻿html, body {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background: #ffcccb; /* צבע רקע אחיד בגווני פסטל */
+    color: #555; /* צבע טקסט נעים יותר */
+    font-family: 'Roboto', sans-serif; /* גופן כללי */
+}
+
+.cart {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    background: #ffffff; /* רקע לבן לאזור העגלת קניות */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* אפקט צל */
+    border-radius: 8px; /* פינות מעוגלות */
+    padding: 20px; /* ריווח פנימי */
+}
+
+#title {
+    background: #f4cccc; /* רקע פסטל לטייטל */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+    #title h1 {
+        margin: 0;
+        font-family: 'azo-sans', sans-serif;
+        font-size: 28px; /* גודל כתב מוגדל לכותרת */
+        font-weight: bold; /* הבלטת הכתב בכותרת */
+        color: #8DB600; /* צבע ירוק תפוח לכותרת */
+    }
+
+    #title p {
+        font-size: 16px; /* גודל כתב מוגדל לפסקה */
+        margin-top: 10px; /* ריווח פנימי עליון לפסקה */
+        padding: 0 10px;
+        font-family: 'Roboto', sans-serif; /* שינוי לכתב מודרני */
+        line-height: 1.6; /* רווחים בין השורות לפסקה */
+        color: #555; /* צבע טקסט */
+    }
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+a.GoToCheckout.TopLink {
+    margin-right: 10px;
+}
+
+.nxbtn.primary {
+    background: #8DB600; /* רקע כפתור ראשי בצבע ירוק תפוח */
+    font-size: 11px;
+}
+
+.nxbtn.primary, .nxbtn.secondary {
+    padding: 10px 20px;
+    color: #fff;
+    border: 0;
+    text-transform: uppercase;
+    font-family: 'azo-sans', sans-serif;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+a.shopmore {
+    margin-left: 10px;
+    color: #337ab7; /* צבע קישור טקסט */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+    a.shopmore:hover {
+        text-decoration: underline; /* קו תחתי על ריחוף */
+    }
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* מבטלת את הרווחים בין התאים */
+}
+
+th {
+    padding: 9px 11px;
+    text-align: right;
+    border-top: 1px solid #f5c6cb;
+    border-bottom: 2px solid #333; /* קו תחתון עבה יותר לכותרות */
+    font-size: 16px; /* גודל כתב מוגדל לכותרות */
+    font-weight: bold; /* הבלטת הכתב בכותרות */
+    font-family: 'azo-sans', sans-serif;
+    text-transform: uppercase;
+    background: #ffb6c1; /* רקע ורוד רך לטבלה */
+    color: #333; /* צבע טקסט כהה */
+    line-height: 1.6; /* רווחים בין השורות */
+}
+
+td.imageColumn {
+    width: 66px;
+}
+
+th.itemsColumn, td.imageColumn {
+    padding-right: 10px;
+}
+
+td {
+    padding: 15px;
+    padding-right: 0;
+    vertical-align: top;
+    border-bottom: 1px solid #f5c6cb;
+    font-size: 14px; /* גודל כתב קבוע לתאים */
+    line-height: 1.4; /* רווחים בין השורות בתאים */
+}
+
+.itemName, .subItemName {
+    font-family: 'azo-sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 2px;
+    font-size: 14px;
+    line-height: 100%;
+    color: #555; /* צבע טקסט נעים יותר */
+}
+
+.availabilityColumn {
+    width: 205px;
+    min-width: 205px;
+    max-width: 205px;
+    font-size: 14px;
+    color: #8DB600; /* צבע ירוק תפוח לטקסט */
+    font-family: 'azo-sans', sans-serif;
+}
+
+.imageColumn div {
+    width: 66px;
+    height: 99px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    background-color: #f8e1e7; /* רקע ורוד רך לתמונות */
+}
+
+.delete a.showText {
+    text-indent: 0;
+    width: 90px;
+    padding-left: 10px;
+    background-image: url(/Images/icn-remove.png);
+    height: 24px;
+    background-position: left -3px;
+    font-size: 11px !important;
+    line-height: 15px;
+    position: relative;
+}
+
+.delete a {
+    display: block;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #d9534f; /* צבע טקסט כהה להסרה */
+}
+
+.price {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 2px;
+    font-family: 'azo-sans', sans-serif;
+    font-weight: 600 !important;
+    color: #4d4d33; /* צבע כהה למחיר */
+}
+
+p, fieldset {
+    margin-bottom: 1em;
+    color: #555; /* צבע טקסט נעים יותר */
+}
+
+.ContentArea a {
+    color: #111;
+    text-decoration: none;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .cart {
+        padding: 10px; /* צמצום הריווח הפנימי עבור מסכים קטנים */
+        width: 90%;
+    }
+
+    #title h1 {
+        font-size: 24px; /* צמצום גודל כתב לכותרת במסכים קטנים */
+    }
+
+    #title p {
+        font-size: 14px; /* צמצום גודל כתב לפסקה במסכים קטנים */
+    }
+
+    .buttons {
+        flex-direction: column; /* שינוי סידור הכפתורים לעמודה במסכים קטנים */
+        align-items: center;
+    }
+
+    th, td {
+        font-size: 12px; /* צמצום גודל כתב בתאים במסכים קטנים */
+    }
+
+    .availabilityColumn, .imageColumn {
+        width: auto;
+        min-width: 0;
+        max-width: none;
+    }
+
+    .delete a, .delete a.showText {
+        width: auto;
+        background-size: contain;
+    }
+}

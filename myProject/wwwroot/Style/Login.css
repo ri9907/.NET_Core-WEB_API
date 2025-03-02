@@ -1,0 +1,68 @@
+﻿html, body {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background: #ffcccb; /* צבע רקע */
+    color: #555; /* צבע טקסט */
+    font-family: 'Roboto', sans-serif; /* גופן כללי */
+    text-align: center; /* יישור טקסט לפי דרישתך */
+}
+
+.card {
+    background: white;
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* להבטיח שאין גלילה אופקית בגלל ה-padding */
+}
+
+h1 {
+    font-size: 24px;
+    color: #8DB600; /* צבע ירוק תפוח לכותרת */
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="email"], input[type="password"], button {
+    width: calc(100% - 40px); /* גודל הקלט שייחשב לפי גודל הכרטיס */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* להבטיח שה-padding וה-border נכללים ברוחב הכולל */
+}
+
+button {
+    background-color: #8DB600; /* צבע רקע ירוק תפוח */
+    color: white; /* צבע טקסט לכפתור */
+    border: none;
+    cursor: pointer;
+    padding: 10px 0; /* ריווח פנימי אנכי */
+}
+
+    button:hover {
+        background-color: #76A700; /* שינוי צבע על ריחוף */
+    }
+
+a {
+    color: #337ab7; /* צבע קישור טקסט */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+    a:hover {
+        text-decoration: underline; /* קו תחתי על ריחוף */
+    }
+
+label {
+    font-size: 16px;
+    margin: 0 10px;
+    display: block;
+    text-align: right;
+}
+
+/* הוספת גופן מודרני */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
